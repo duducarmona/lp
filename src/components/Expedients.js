@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import apiClient from '../services/apiClient';
+import Header from './Header';
 
 class Expedients extends PureComponent {
 	state = {
@@ -28,16 +29,19 @@ class Expedients extends PureComponent {
 		
 		return (
 			<div>
+				<Header />
 				<h1>EXPEDIENTS:</h1>
 				<ul>
 					{expedients.map((expedient, index) => {
+						const { resume, dificulty, description, hearing_date, judicial_party } = expedient;
+
 						return (
 							<li key={index}>
-								<h2>{expedient.resume}</h2>
-								<p>Difficulty: {expedient.dificulty}</p>
-								<p>{expedient.description}</p>
-								<p>Hearing date: {expedient.hearing_date}</p>
-								<p>Judicial party: {expedient.judicial_party}</p>
+								<h2>{resume}</h2>
+								<p>Difficulty: {dificulty}</p>
+								<p>{description}</p>
+								<p>Hearing date: {hearing_date}</p>
+								<p>Judicial party: {judicial_party}</p>
 							</li>
 						);
 					})}

@@ -11,6 +11,10 @@ class ApiClient {
 	getAllExpedients() {
 		return this.apiClient.get('/expedients');
 	}
+
+	getAllSubstitutes() {
+		return this.apiClient.get('/substitutes');
+	}
 }
 
 const apiClient = new ApiClient();

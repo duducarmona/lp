@@ -1,0 +1,14 @@
+.Navbar {
+  background-color: turquoise;
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  font-size: 20px;
+}
+
+.Navbar-Link {
+  margin: 10px;
+}
