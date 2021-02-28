@@ -1,20 +1,24 @@
 import './App.css';
 import React, { PureComponent } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Main from './components/Main';
 import Expedients from './components/Expedients';
 import Substitutes from './components/Substitutes';
+import Expedient from './components/Expedient';
 
 class App extends PureComponent {
-	render () {
-    return (
-      <div className="App">
-        <Route exact path={'/'} component={Main} />
-        <Route exact path={'/expedients'} component={Expedients} />
-        <Route exact path={'/substitutes'} component={Substitutes} />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className="App">
+				<Switch>
+					<Route exact path={'/'} component={Main} />
+					<Route exact path={'/expedients'} component={Expedients} />
+					<Route exact path={'/substitutes'} component={Substitutes} />
+					<Route exact path={'/expedients/:id'} component={Expedient} />
+				</Switch>
+			</div>
+		);
+	}
 }
 
 export default App;

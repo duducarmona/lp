@@ -1,5 +1,5 @@
 .Navbar {
-  background-color: turquoise;
+  background-color: white;
   display: flex;
   flex-direction: column;
   width: 125px;
@@ -7,8 +7,11 @@
   right: 0;
   top: 60px;
   font-size: 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
 }
 
 .Navbar-Link {
   margin: 10px;
+  color: #82B9F6;
 }

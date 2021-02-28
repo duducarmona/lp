@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import apiClient from '../services/apiClient';
+import Header from './Header';
+import './Substitutes.css';
 
 class Substitutes extends PureComponent {
 	state = {
@@ -14,7 +16,6 @@ class Substitutes extends PureComponent {
 		apiClient
 			.getAllSubstitutes()
 			.then(({ data }) => {
-				console.log('substitutes: ', data);
 				this.setState({
 					substitutes: data,
 				});
@@ -29,24 +30,31 @@ class Substitutes extends PureComponent {
 
 		return (
 			<div>
-				<h1>SUBSTITUTES:</h1>
-				<ul>
-					{substitutes.map((substitute, index) => {
-            const { name, last_name, phone, image, id } = substitute;
-            
-						return (
-							<li key={index}>
-								<h2>
-									{name} {last_name}
-								</h2>
-								<p>Phone: {phone}</p>
-								<img src={image} alt={`substitute ${id}`}></img>
-								{/* METER AQUÍ IMAGEN
-                METER AQUÍ LISTADO DE judicial_party */}
-							</li>
-						);
-					})}
-				</ul>
+				<Header />
+				<div className="wrapper">
+					<h1>Substitutes:</h1>
+					<ul className="list-no-decoration">
+						{substitutes.map((substitute, index) => {
+							const { name, last_name, judicial_party } = substitute;
+
+							return (
+								<li key={index} className="App-item">
+									<h2>
+										{name} {last_name}
+									</h2>
+									<p>
+										<b>Judicial parties:</b>
+									</p>
+									<ul className="Substitutes-jp-list">
+										{judicial_party.map((city, index) => {
+											return <li key={index}>{city}</li>;
+										})}
+									</ul>
+								</li>
+							);
+						})}
+					</ul>
+				</div>
 			</div>
 		);
 	}

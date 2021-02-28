@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
+body {
+  background-color: #F4F5F7;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+}
+
 .App-link {
   color: #61dafb;
 }
@@ -12,4 +21,29 @@ a {
 ul {
   margin: 0;
   padding: 0;
+}
+
+.list-no-decoration {
+  list-style-type: none;
+}
+
+.wrapper {
+  padding: 20px;
+  margin-top: 50px;
+}
+
+h1 {
+  color: grey;
+}
+
+.App-item {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.p-only-one-item {
+  font-size: 20px;
 }

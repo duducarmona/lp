@@ -2,9 +2,9 @@
   position: absolute;
   right: 10px;
   top: 10px;
-  /* background-color: tomato; */
 }
 
 .MenuButton-icons {
   font-size: 40px;
+  color: white;
 }
