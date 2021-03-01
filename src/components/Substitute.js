@@ -39,7 +39,7 @@ class Substitute extends PureComponent {
 					<h2>
 						{name} {last_name}
 					</h2>
-					<img src={image + new Date().getTime()} alt={`${name} ${last_name} photo`} className="Substitute-img" />
+					<img src={image + '' + new Date().getTime()} alt={`${name} ${last_name} photo`} className="Substitute-img" />
 					<p className="p-only-one-item">
 						<b>Phone:</b> {phone}
 					</p>
