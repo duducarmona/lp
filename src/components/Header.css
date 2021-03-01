@@ -24,3 +24,25 @@
   justify-content: center;
   align-items: center;
 }
+
+.hide {
+  display: none;
+}
+
+.Header-Link {
+  color: white;
+  margin: 20px;
+}
+
+@media (min-width: 410px) {
+  .hide-web {
+    display: none;
+  }
+
+  .links-menu-web {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+}

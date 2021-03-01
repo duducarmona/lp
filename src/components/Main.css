@@ -1,13 +1,19 @@
 .Main {
   text-align: center;
   background-color: #82B9F6;
-  padding-bottom: 57px;
+  height: 100vh;
 }
 
 .Main-h1 {
   padding-top: 50px;
   padding-bottom: 30px;
   margin: 0;
+}
+
+.Main-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .Main-icons {
@@ -18,4 +24,11 @@
   border-radius: 25px;
   margin: 40px;
   color: white;
+}
+
+@media (min-width: 410px) {
+  .Main-h1-web {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
 }

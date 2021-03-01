@@ -3,7 +3,7 @@ import MenuButton from './MenuButton';
 import './Header.css';
 import Navbar from './Navbar';
 import PropTypes from 'prop-types';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class Header extends PureComponent {
 	state = {
@@ -21,13 +21,26 @@ class Header extends PureComponent {
 
 		return (
 			<div className="Header">
-				<div className="arrow-icon-container">
+				<div className="arrow-icon-container hide-web">
 					<i className="material-icons arrow-icon" onClick={this.props.history.goBack}>
 						arrow_back_ios_new
 					</i>
 				</div>
-				{open && <Navbar update={this.update} />}
-				<MenuButton open={open} handleClick={this.handleClick} />
+				<div className="hide links-menu-web">
+					<Link className="Header-Link" to="/">
+						Home
+					</Link>
+					<Link className="Header-Link" to="/expedients">
+						Expedients
+					</Link>
+					<Link className="Header-Link" to="/substitutes">
+						Substitutes
+					</Link>
+				</div>
+				<div className="hide-web">
+					{open && <Navbar update={this.update} />}
+					<MenuButton open={open} handleClick={this.handleClick} />
+				</div>
 			</div>
 		);
 	}
