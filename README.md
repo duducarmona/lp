@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Expedients & Substitutes (Client)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Project to list Expedients & Substitutes.
 
-In the project directory, you can run:
+## Motivation
 
-### `yarn start`
+The motivation is to show my skills with React and Express.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Instructions to run the projects
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The project has been developed with a "mobile first" design.
 
-### `yarn test`
+Mobile view:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src="/Users/dudu/Library/Application Support/typora-user-images/image-20210301155441473.png" alt="image-20210301155441473" style="zoom:40%;" />
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Computer view:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img src="/Users/dudu/Library/Application Support/typora-user-images/image-20210301155658811.png" alt="image-20210301155658811" style="zoom:25%;" />
 
-### `yarn eject`
+1. Clone the Client and the Server projects from:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+   https://github.com/duducarmona/lp-client
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   https://github.com/duducarmona/lp-server
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Execute "npm install" in the root folder of both projects.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+3. Run the Client project with "npm run start".
 
-## Learn More
+4. Run the Server project with "npm run start-dev".
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## User Stories
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Expedients - list** - As a user I want to list all the Expedients.
 
-### Code Splitting
+**Expedient - detail** - As a user I want to see the detail of one Expedient.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Substitutes - list** - As a user I want to list all the Substitutes.
 
-### Analyzing the Bundle Size
+**Substitute - detail** - As a user I want to see the detail of one Substitute.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Backlog
 
-### Making a Progressive Web App
+List of other features outside of the MVPs scope
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**New expedient:** - As a user I want to create new expedients.
 
-### Advanced Configuration
+**Hooks:** - Use Hooks.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+**Login** - As a user I want to be able to log in on the webpage so that I can get back to my account.
 
-### Deployment
+**Extend info in DB json**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**404:** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault.
 
-### `yarn build` fails to minify
+## Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Git
+
+https://github.com/duducarmona/lp-client
+
